@@ -2,25 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ludo Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LudoCash Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="dashboard">
-        <div class="top-bar">
-            <div class="avatar"><img src="assets/avatar.png" alt="User"></div>
-            <div class="balance">
-                <div class="coin"><img src="assets/coin.png" alt="Coin"> <span>20</span></div>
-                <div class="diamond"><img src="assets/diamond.png" alt="Diamond"> <span>0</span></div>
-            </div>
-        </div>
-        <div class="main-buttons">
-            <button class="btn online"><img src="assets/ludo-icon.png" alt="Ludo Icon"> Online</button>
-            <button class="btn friends"><img src="assets/ludo-icon.png" alt="Ludo Icon"> Play with Friends</button>
-        </div>
-        <div class="settings"><img src="assets/settings.png" alt="Settings"></div>
-    </div>
+  <div class="login-container">
+    <img src="assets/logo.png" alt="LudoCash Logo" class="logo" />
+    <h2>Login to LudoCash</h2>
+    <form onsubmit="login(event)">
+      <input type="text" id="mobile" placeholder="Mobile Number" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      // Dummy login logic
+      const mobile = document.getElementById('mobile').value;
+      const password = document.getElementById('password').value;
+
+      if (mobile === "1234567890" && password === "1234") {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid credentials");
+      }
+    }
+  </script>
 </body>
 </html>
