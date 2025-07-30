@@ -1,69 +1,73 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: #003366;
-    font-family: Arial, sans-serif;
-    color: white;
-    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(145deg, #FFD700, #FFB800);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-
+.dashboard {
+    width: 375px;
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 .top-bar {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #002244;
+    align-items: center;
 }
-
-.user-icon {
+.avatar img {
     width: 40px;
     height: 40px;
-    background-color: gray;
     border-radius: 50%;
 }
-
-.coins {
-    font-size: 16px;
-    font-weight: bold;
+.balance {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
-
-.settings-icon {
-    position: absolute;
-    left: 10px;
-    top: 70px;
-    font-size: 24px;
+.balance div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-
-.logo img {
-    width: 150px;
-    margin: 30px 0;
+.balance img {
+    width: 20px;
+    height: 20px;
 }
-
-.buttons {
+.main-buttons {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .btn {
-    padding: 15px 25px;
-    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    padding: 12px;
     border: none;
-    border-radius: 8px;
-    width: 220px;
-    text-align: center;
-}
-
-.online {
-    background-color: #28a745;
+    border-radius: 10px;
     color: white;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    cursor: pointer;
 }
-
-.friends {
-    background-color: #dc3545;
-    color: white;
+.btn img {
+    width: 24px;
+    height: 24px;
+}
+.settings {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.settings img {
+    width: 24px;
+    height: 24px;
 }

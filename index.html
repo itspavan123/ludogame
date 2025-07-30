@@ -2,18 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LudoPro Login</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludo Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg">
-  <div class="card">
-    <h2>Welcome to <span class="brand">LudoPro</span></h2>
-    <input type="email" placeholder="Email" />
-    <input type="password" placeholder="Password" />
-    <button class="btn">Login</button>
-    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-  </div>
+<body>
+    <div class="dashboard">
+        <div class="top-bar">
+            <div class="avatar"><img src="assets/avatar.png" alt="User"></div>
+            <div class="balance">
+                <div class="coin"><img src="assets/coin.png" alt="Coin"> <span>20</span></div>
+                <div class="diamond"><img src="assets/diamond.png" alt="Diamond"> <span>0</span></div>
+            </div>
+        </div>
+        <div class="main-buttons">
+            <button class="btn online"><img src="assets/ludo-icon.png" alt="Ludo Icon"> Online</button>
+            <button class="btn friends"><img src="assets/ludo-icon.png" alt="Ludo Icon"> Play with Friends</button>
+        </div>
+        <div class="settings"><img src="assets/settings.png" alt="Settings"></div>
+    </div>
 </body>
 </html>
